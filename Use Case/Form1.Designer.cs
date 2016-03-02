@@ -129,6 +129,7 @@
             this.pbUseCase.Size = new System.Drawing.Size(725, 380);
             this.pbUseCase.TabIndex = 2;
             this.pbUseCase.TabStop = false;
+            this.pbUseCase.Paint += new System.Windows.Forms.PaintEventHandler(this.pbUseCase_Paint);
             this.pbUseCase.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pbUseCase_MouseDown);
             this.pbUseCase.MouseMove += new System.Windows.Forms.MouseEventHandler(this.pbUseCase_MouseMove);
             // 
