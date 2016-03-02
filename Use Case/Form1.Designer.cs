@@ -38,7 +38,6 @@
             this.pbUseCase = new System.Windows.Forms.PictureBox();
             this.btClear = new System.Windows.Forms.Button();
             this.btRemove = new System.Windows.Forms.Button();
-            this.gBoxProperties = new System.Windows.Forms.GroupBox();
             this.gBoxElements.SuspendLayout();
             this.gBoxModes.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbUseCase)).BeginInit();
@@ -131,6 +130,7 @@
             this.pbUseCase.TabIndex = 2;
             this.pbUseCase.TabStop = false;
             this.pbUseCase.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pbUseCase_MouseDown);
+            this.pbUseCase.MouseMove += new System.Windows.Forms.MouseEventHandler(this.pbUseCase_MouseMove);
             // 
             // btClear
             // 
@@ -140,6 +140,7 @@
             this.btClear.TabIndex = 3;
             this.btClear.Text = "Clear all";
             this.btClear.UseVisualStyleBackColor = true;
+            this.btClear.Click += new System.EventHandler(this.btClear_Click);
             // 
             // btRemove
             // 
@@ -149,22 +150,13 @@
             this.btRemove.TabIndex = 4;
             this.btRemove.Text = "Remove";
             this.btRemove.UseVisualStyleBackColor = true;
-            // 
-            // gBoxProperties
-            // 
-            this.gBoxProperties.Location = new System.Drawing.Point(745, 12);
-            this.gBoxProperties.Name = "gBoxProperties";
-            this.gBoxProperties.Size = new System.Drawing.Size(316, 497);
-            this.gBoxProperties.TabIndex = 5;
-            this.gBoxProperties.TabStop = false;
-            this.gBoxProperties.Text = "Properties";
+            this.btRemove.Click += new System.EventHandler(this.btRemove_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1073, 521);
-            this.Controls.Add(this.gBoxProperties);
+            this.ClientSize = new System.Drawing.Size(750, 521);
             this.Controls.Add(this.btRemove);
             this.Controls.Add(this.btClear);
             this.Controls.Add(this.pbUseCase);
@@ -193,7 +185,6 @@
         private System.Windows.Forms.RadioButton rBtCreate;
         private System.Windows.Forms.Button btClear;
         private System.Windows.Forms.Button btRemove;
-        private System.Windows.Forms.GroupBox gBoxProperties;
     }
 }
 

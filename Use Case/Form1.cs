@@ -21,5 +21,20 @@ namespace Use_Case
         {
 
         }
+
+        private void btClear_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btRemove_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pbUseCase_MouseMove(object sender, MouseEventArgs e)
+        {
+
+        }
     }
 }

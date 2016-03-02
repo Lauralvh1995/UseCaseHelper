@@ -8,5 +8,15 @@ namespace Use_Case
 {
     class Actor
     {
+        //Fields
+
+
+        //Constructor
+        public Actor()
+        {
+
+        }
+
+        //Methods
     }
 }

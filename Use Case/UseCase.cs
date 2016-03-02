@@ -8,5 +8,19 @@ namespace Use_Case
 {
     class UseCase
     {
+        //Fields
+        string UCName;
+
+
+
+
+        //Constructor
+        public UseCase()
+        {
+            
+        }
+        
+        //Methods
+        
     }
 }
