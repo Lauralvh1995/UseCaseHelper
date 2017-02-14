@@ -38,6 +38,8 @@
             this.pbUseCase = new System.Windows.Forms.PictureBox();
             this.btClear = new System.Windows.Forms.Button();
             this.btRemove = new System.Windows.Forms.Button();
+            this.btShow = new System.Windows.Forms.Button();
+            this.btClearLines = new System.Windows.Forms.Button();
             this.gBoxElements.SuspendLayout();
             this.gBoxModes.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbUseCase)).BeginInit();
@@ -153,11 +155,34 @@
             this.btRemove.UseVisualStyleBackColor = true;
             this.btRemove.Click += new System.EventHandler(this.btRemove_Click);
             // 
+            // btShow
+            // 
+            this.btShow.Enabled = false;
+            this.btShow.Location = new System.Drawing.Point(231, 51);
+            this.btShow.Name = "btShow";
+            this.btShow.Size = new System.Drawing.Size(156, 44);
+            this.btShow.TabIndex = 5;
+            this.btShow.Text = "Show Use Case Info";
+            this.btShow.UseVisualStyleBackColor = true;
+            this.btShow.Click += new System.EventHandler(this.btShow_Click);
+            // 
+            // btClearLines
+            // 
+            this.btClearLines.Location = new System.Drawing.Point(663, 71);
+            this.btClearLines.Name = "btClearLines";
+            this.btClearLines.Size = new System.Drawing.Size(75, 52);
+            this.btClearLines.TabIndex = 6;
+            this.btClearLines.Text = "Clear Lines";
+            this.btClearLines.UseVisualStyleBackColor = true;
+            this.btClearLines.Click += new System.EventHandler(this.btClearLines_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(750, 521);
+            this.Controls.Add(this.btClearLines);
+            this.Controls.Add(this.btShow);
             this.Controls.Add(this.btRemove);
             this.Controls.Add(this.btClear);
             this.Controls.Add(this.pbUseCase);
@@ -186,6 +211,8 @@
         private System.Windows.Forms.RadioButton rBtCreate;
         private System.Windows.Forms.Button btClear;
         private System.Windows.Forms.Button btRemove;
+        private System.Windows.Forms.Button btShow;
+        private System.Windows.Forms.Button btClearLines;
     }
 }
 
