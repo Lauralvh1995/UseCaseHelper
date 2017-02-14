@@ -22,6 +22,7 @@ namespace Use_Case
 
         public UseCase(Point location, string name)
         {
+
             this.location = location;
             this.name = name;
             this.selection = Selection.Normal;
