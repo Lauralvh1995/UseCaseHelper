@@ -1,6 +1,6 @@
 ﻿namespace Use_Case
 {
-    partial class Form1
+    partial class UseCaseHelperForm
     {
         /// <summary>
         /// Required designer variable.

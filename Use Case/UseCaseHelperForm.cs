@@ -16,7 +16,7 @@ namespace Use_Case
         Highlight,
         Selected
     }
-    public partial class Form1 : Form
+    public partial class UseCaseHelperForm : Form
     {
         List<UseCase> usecase = new List<UseCase>();
         List<Actor> actors = new List<Actor>();
@@ -25,7 +25,7 @@ namespace Use_Case
         Point end;
         int completed;
 
-        public Form1()
+        public UseCaseHelperForm()
         {
             InitializeComponent();
         }
